@@ -26,6 +26,6 @@ jobs:
             cd /var/www/html
             sudo rm -f index.html
             # Download the correct file from GitHub and save as index.html
-            sudo wget -O index.html https://raw.githubusercontent.com/${{ github.repository }}/main/index1.html
+            sudo wget -O index.html https://raw.githubusercontent.com/${{ github.repository }}/main/index.html
             sudo systemctl restart apache2
             echo "Deployment complete!"
